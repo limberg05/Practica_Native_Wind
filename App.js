@@ -29,7 +29,7 @@ const App = () => {
     setNuevaTarea('');
   };
 
-  const toogleTarea = (id) => {
+  const toggleTarea = (id) => {
     setTareas(
       tareas.map((tarea) =>
         tarea.id === id ? { ...tarea, completada: !tarea.completada } : tarea
